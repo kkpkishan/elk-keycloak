@@ -15,7 +15,7 @@
              <p>  Username:admin </p>
              <p>  password:redhat </p></li>
             <li>keycloak first import oauth2.json in client</li>
-            <li>Get securty token and update in kibana.yaml</li>
+            <li>Get securty token and update in openid(kibana).yaml</li>
             <li>Run docker-compose.yaml file
             <p>CMD: docker-compose -f  up -d</p></li>
             <tr>
