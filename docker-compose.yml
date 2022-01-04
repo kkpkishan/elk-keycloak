@@ -63,38 +63,6 @@ services:
       - ./openid(kibana).yaml:/usr/share/kibana/config/kibana.yml
     networks:
       - odfe-net
-  # keycloak:
-  #   image: quay.io/keycloak/keycloak:latest
-  #   container_name: keycloak
-  #   # hostname: keycloak
-  #   # domainname: mylab.io
-  #   environment:
-  #     DB_VENDOR: h2
-  #     KEYCLOAK_USER: admin
-  #     KEYCLOAK_PASSWORD: admin
-  #     KEYCLOAK_LOGLEVEL: ALL # ALL, DEBUG, ERROR, FATAL, INFO, OFF, TRACE and WARN
-  #     KEYCLOAK_IMPORT: /tmp/realm.json    
-  #   volumes:
-  #     # - type: bind
-  #     #   source: ./ssl/root-ca.pem
-  #     #   target: /etc/x509/https/ca.crt
-  #     # - type: bind
-  #     #   source: ./ssl/keycloak.pem
-  #     #   target: /etc/x509/https/tls.crt
-  #     # - type: bind
-  #     #   source: ./ssl/keycloak.key
-  #     #   target: /etc/x509/https/tls.key
-  #     - type: bind
-  #       source: ./oauth2-keycloak.json
-  #       target: /tmp/realm.json
-  #   ports:
-  #     - 8443:8443
-  #     - 8080:8080
-  #   expose:
-  #     - "8443"
-  #     - "8080"
-  #   networks:
-  #     - odfe-net
 volumes:
   odfe-data1:
   odfe-data2:

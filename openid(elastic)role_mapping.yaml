@@ -32,7 +32,7 @@ kibana_user:
   backend_roles:
   - "kibanauser"
   # users:
-  # - "kishan@admin.local"
+  # - "exampl@admin.local"
   description: "Maps kibanauser to kibana_user"
 
 readall:

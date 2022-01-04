@@ -29,8 +29,8 @@ config:
           type: openid
           challenge: false
           config:
-            openid_connect_url: http://192.168.1.135:8080/auth/realms/openid/.well-known/openid-configuration
-            kibana_url: http://192.168.1.135:5601
+            openid_connect_url: http://IP:8080/auth/realms/openid/.well-known/openid-configuration
+            kibana_url: http://IP:5601
             roles_key: roles
             subject_key: preferred_username
         authentication_backend:
