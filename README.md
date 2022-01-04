@@ -8,7 +8,7 @@
            <p>Install docker and docker-compose.</p>
            <h6>Create Details</h6>
            <ol>
-            <li>Update your Host IP address in all the config files and set up proper keycloak and kibana details.
+            <li>change IP address in all the config files and set up proper keycloak and kibana details.
             <p>CMD: docker-compose -f keycloak.yml up -d</p></li>
             <li>Check keycloak working  
             <p>URL: http://IP:8080 </p>
